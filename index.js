@@ -87,9 +87,10 @@ server.use(
 server.use(passport.authenticate("session"));
 
 server.use(
-  cors({
-    exposedHeaders: ["X-Total-Count"],
-  })
+  cors()
+  //   {
+  //   exposedHeaders: ["X-Total-Count"],
+  // }
 );
 
 //server.use(express.raw({ type: "application/json" }));
